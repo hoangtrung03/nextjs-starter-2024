@@ -57,4 +57,4 @@ module.exports = {
     '^@/mocks(.*)$': '<rootDir>/__mocks__$1',
     '^@/tests(.*)$': '<rootDir>/.jest$1'
   }
-};
+}

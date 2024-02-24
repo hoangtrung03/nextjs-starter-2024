@@ -39,4 +39,4 @@ module.exports = {
       templateFile: 'templates/component/test.tsx.hbs'
     }
   ]
-};
+}

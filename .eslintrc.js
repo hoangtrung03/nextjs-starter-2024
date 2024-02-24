@@ -9,13 +9,7 @@ module.exports = {
     'plugin:storybook/recommended',
     'prettier'
   ],
-  plugins: [
-    'react',
-    '@typescript-eslint',
-    'react-hooks',
-    'eslint-plugin-import-helpers',
-    'testing-library'
-  ],
+  plugins: ['react', '@typescript-eslint', 'react-hooks', 'eslint-plugin-import-helpers', 'testing-library'],
   overrides: [
     // Only uses Testing Library lint rules in test files
     {
@@ -43,39 +37,33 @@ module.exports = {
     node: true
   },
   rules: {
-    'react-hooks/rules-of-hooks': 2,
-    'react-hooks/exhaustive-deps': 1,
-    'newline-before-return': 2,
-    'react/prop-types': 0,
-    'react/react-in-jsx-scope': 0,
-    'import-helpers/order-imports': [
-      2,
+    '@typescript-eslint/consistent-type-imports': 'warn',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/no-explicit-any': 'error',
+    'prefer-const': 'warn',
+    'import/no-duplicates': 'error',
+    '@typescript-eslint/no-extra-semi': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
+    'react/react-in-jsx-scope': 'off',
+    'no-console': 'warn',
+    'no-constant-binary-expression': 'error',
+    'no-undef': 'off',
+    'lodash/prefer-lodash-method': 'off',
+    'react-hooks/rules-of-hooks': 'off',
+    'react-hooks/exhaustive-deps': 'off',
+    'prettier/prettier': [
+      'warn',
       {
-        newlinesBetween: 'always',
-        groups: [
-          ['/^next/', 'module'],
-          '/^@/styles/',
-          '/^@/components/',
-          '/^@/lib/',
-          ['parent', 'sibling', 'index']
-        ],
-        alphabetize: {
-          order: 'asc',
-          ignoreCase: true
-        }
-      }
-    ],
-    '@typescript-eslint/no-unused-vars': [
-      2,
-      {
-        argsIgnorePattern: '^_'
-      }
-    ],
-    'no-console': [
-      2,
-      {
-        allow: ['warn', 'error']
+        arrowParens: 'always',
+        semi: false,
+        trailingComma: 'none',
+        tabWidth: 2,
+        endOfLine: 'auto',
+        useTabs: false,
+        singleQuote: true,
+        printWidth: 120,
+        jsxSingleQuote: true
       }
     ]
   }
-};
+}
