@@ -1,91 +1,36 @@
-# Boilerplate and Starter for Next JS 14+, Tailwind CSS 3 and TypeScript
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-🚀 Boilerplate and Starter for Next.js, Tailwind CSS and TypeScript ⚡️ Made with developer experience first: Next.js (app routing), TypeScript, ESLint, Prettier, Husky, Lint-Staged, Jest, React Testing Library, PostCSS, Tailwind CSS, Storybook, Plop, GH actions.
+## Getting Started
 
-![Cover](https://svgshare.com/i/idk.svg)
-
-## :rocket: Features
-
-Developer experience first:
-
-- [Next.js](https://nextjs.org) for Static Site Generator
-- Type checking [TypeScript](https://www.typescriptlang.org)
-- Integrate with [Tailwind CSS](https://tailwindcss.com)
-- [Storybook](https://storybook.js.org) for components documentation
-- Strict Mode for TypeScript and React 18
-- Linter with [ESLint](https://eslint.org)
-- Code Formatter with [Prettier](https://prettier.io)
-- [Husky](https://typicode.github.io/husky/#/) for Git Hooks
-- [Lint-staged](https://github.com/okonet/lint-staged) for running linters on Git staged files
-- Testing with [Jest](https://jestjs.io/) and [react-testing-library](https://testing-library.com/)
-- Absolute Imports using `@` prefix
-- Nextjs custom layouts
-- [T3 env](https://env.t3.gg/) Manage your environment variables with ease
-- Message convention for git
-- Maximize lighthouse score
-- GH actions
-- Components generation with [Plop](https://plopjs.com/) and [atomic design](https://bradfrost.com/blog/post/atomic-web-design/) convention
-
-## 📅 Plans
-
-- [Bundler Analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
-- [next-pwa](https://github.com/shadowwalker/next-pwa)
-
-## 🧪 Testing
-
-All tests are collocated with the source code inside the same directory. So, it makes it easier to find them. Coverage threshold is set to `70%`. In the `.jest` folder there is a custom provider for the all tests.
-
-## :information_source: How To Use
-
-To use this template you can simply click in **[Use this template](https://github.com/hadrysm/nextjs-boilerplate/generate)** or create your Next.js app based on this template by running:
+First, run the development server:
 
 ```bash
-pnpm create next-app -e https://github.com/hadrysm/nextjs-boilerplate
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## 🚀 Deploy to production
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can see the results locally in production mode with:
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-```shell
-pnpm build
-```
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-```shell
-pnpm start
-```
+## Learn More
 
-## :gear: Generating components
+To learn more about Next.js, take a look at the following resources:
 
-```bash
-pnpm generate Button
-```
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Result (if you chose an atom component):
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-```
-└── components
-      └── atoms
-        └── Button
-          ├── index.ts
-          ├── Button.stories.tsx
-          ├── Button.test.tsx
-          └── Button.tsx
-```
+## Deploy on Vercel
 
-## 🤝 Contributing
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-1. Fork this repository;
-2. Create your branch: `git checkout -b my-awesome-contribution`;
-3. Commit your changes: `git commit -m 'feat: Add some awesome contribution'`;
-4. Push to the branch: `git push origin my-awesome-contribution`.
-
-## License
-
-Licensed under the MIT License, Copyright © 2024
-
-See [LICENSE](LICENSE) for more information.
-
----
-
-Made with much :heart: and :muscle: by Mateusz Hadryś :blush: <a href="https://www.linkedin.com/in/mateusz-hadry%C5%9B/">My Contact</a>
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
