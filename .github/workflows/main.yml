@@ -3,7 +3,7 @@ name: Test application generation
 on:
   push:
     branches:
-      - main
+      - master
 
   pull_request:
     types: [opened, synchronize, reopened]
@@ -17,12 +17,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+      - name: Setup yarn
+        run: npm install -g yarn
       - name: Setup node
         uses: actions/setup-node@v3
         with:
           node-version: 18
-      - name: Install yarn
-        run: npm install -g yarn
       - name: Install dependencies
         run: yarn install
       - name: Run prettier check
@@ -36,12 +36,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+      - name: Setup yarn
+        run: npm install -g yarn
       - name: Setup node
         uses: actions/setup-node@v3
         with:
           node-version: 18
-      - name: Install yarn
-        run: npm install -g yarn
       - name: Install dependencies
         run: yarn install
       - name: Run eslint check
@@ -56,12 +56,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+      - name: Setup yarn
+        run: npm install -g yarn
       - name: Setup node
         uses: actions/setup-node@v3
         with:
           node-version: 18
-      - name: Install yarn
-        run: npm install -g yarn
       - name: Install dependencies
         run: yarn install
       - name: Run tests
@@ -78,12 +78,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+      - name: Setup yarn
+        run: npm install -g yarn
       - name: Setup node
         uses: actions/setup-node@v3
         with:
           node-version: 18
-      - name: Install yarn
-        run: npm install -g yarn
       - name: Install dependencies
         run: yarn install
       - name: Build nextjs
@@ -100,12 +100,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+      - name: Setup yarn
+        run: npm install -g yarn
       - name: Setup node
         uses: actions/setup-node@v3
         with:
           node-version: 18
-      - name: Install yarn
-        run: npm install -g yarn
       - name: Install dependencies
         run: yarn install
       - name: Build storybook
