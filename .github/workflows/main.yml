@@ -17,10 +17,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Setup yarn
-        uses: borales/actions-yarn@v4
-        with:
-          version: 8.10.2
       - name: Setup node
         uses: actions/setup-node@v3
         with:
@@ -38,10 +34,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Setup yarn
-        uses: borales/actions-yarn@v4
-        with:
-          version: 8.10.2
       - name: Setup node
         uses: actions/setup-node@v3
         with:
@@ -60,10 +52,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Setup yarn
-        uses: borales/actions-yarn@v4
-        with:
-          version: 8.10.2
       - name: Setup node
         uses: actions/setup-node@v3
         with:
@@ -84,10 +72,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Setup yarn
-        uses: borales/actions-yarn@v4
-        with:
-          version: 8.10.2
       - name: Setup node
         uses: actions/setup-node@v3
         with:
@@ -108,10 +92,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Setup yarn
-        uses: borales/actions-yarn@v4
-        with:
-          version: 8.10.2
       - name: Setup node
         uses: actions/setup-node@v3
         with:
