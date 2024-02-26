@@ -21,6 +21,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+      - name: Install yarn
+        run: npm install -g yarn
       - name: Install dependencies
         run: yarn install
       - name: Run prettier check
@@ -38,6 +40,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+      - name: Install yarn
+        run: npm install -g yarn
       - name: Install dependencies
         run: yarn install
       - name: Run eslint check
@@ -56,6 +60,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+      - name: Install yarn
+        run: npm install -g yarn
       - name: Install dependencies
         run: yarn install
       - name: Run tests
@@ -76,6 +82,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+      - name: Install yarn
+        run: npm install -g yarn
       - name: Install dependencies
         run: yarn install
       - name: Build nextjs
@@ -96,6 +104,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+      - name: Install yarn
+        run: npm install -g yarn
       - name: Install dependencies
         run: yarn install
       - name: Build storybook
