@@ -17,6 +17,7 @@
     "test:ci": "jest --ci",
     "storybook": "storybook dev -p 6006",
     "storybook:build": "storybook build",
+    "storybook:check": "npx storybook@latest doctor",
     "postinstall": "husky install",
     "generate": "yarn plop --plopfile ./.plop/plopfile.js",
     "commit": "cz"
@@ -42,11 +43,11 @@
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^19.0.3",
-    "@storybook/addon-essentials": "^8.0.0",
-    "@storybook/addon-interactions": "^8.0.0",
-    "@storybook/addon-links": "^8.0.1",
+    "@storybook/addon-essentials": "^8.0.2",
+    "@storybook/addon-interactions": "^8.0.2",
+    "@storybook/addon-links": "^8.0.2",
     "@storybook/blocks": "^8.0.2",
-    "@storybook/nextjs": "^8.0.0",
+    "@storybook/nextjs": "^8.0.2",
     "@storybook/react": "^8.0.2",
     "@storybook/testing-library": "^0.2.2",
     "@testing-library/jest-dom": "6.4.2",
@@ -81,7 +82,7 @@
     "postcss": "8.4.36",
     "prettier": "3.2.5",
     "prettier-plugin-tailwindcss": "0.5.12",
-    "storybook": "^8.0.1",
+    "storybook": "^8.0.2",
     "tailwind-scrollbar": "3.0.5",
     "tailwindcss": "3.4.1",
     "typescript": "5.4.2"
